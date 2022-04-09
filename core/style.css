@@ -1,507 +1,168 @@
-/*
-
-
-
-
-
-font-family: 'Acme', sans-serif;
-font-family: 'Arvo', serif;
-font-family: 'Syne Mono', monospace;
-
-
-*/
-/* HEADER START */
-
-*{
-	font-family: 'Acme', sans-serif;
-}
-
-.header{
-   background:var(--pc1);
-   color:;
-   height:60px;
-   padding:20px;
-   text-align:center;
-   display:flex;
-   flex-wrap:nowrap;
-   overflow:scroll;
-   justify-content:center;
+.MyNavbar{
+   background:whitesmoke;
    position:fixed;
+   z-index:99999990;
+   width:100%;
    top:0;
-   left:0;
-   right:0;
-   z-index:2;
-   box-shadow:1px 2px 10px #222;
+   box-shadow:2px 2px 10px #222;
    
 }
 
-.header button{
-	  border:none;
-	  padding:5px;
-	  margin:0 5px;
-	  background:transparent;
-	  border:1px solid white;
-	  color:white;
-	  font-weight:bold;
+
+#about{
+   margin-top:100px;
 }
 
-.header button a{
-	  text-decoration:none;
-	
+#switch{
+   color:;
+   background:blue;
 }
 
-/* HEADER END */
-
-
-
-/* ABOUT START */
-
-#img{
-	border-top-left-radius:7px;
-	border-top-right-radius:7px;
-	
-}
-
-.about{
-	
-	margin:5px 15px;
-	background:seagreen;
-	
-	height:;
-	border:3px solid #09244F;
-	border-radius:10px;
-	position:relative;
-	top:70px;
-	box-shadow:2px 2px 9px black;
-	
-}
-
-.about .title{
-	color:#000;
-	padding:10px;
-	font-family: 'League Gothic', sans-serif;
-	color:whitesmoke;
-	
-}
-
-.about .desc{
-	padding:10px;
-	color:white;
-	
-	
-	
-}
-
-.about .desc p{
-	font-family: 'Barlow Condensed', sans-serif;
-	text-align:center;
-	font-size:1rem;
-	padding:5px;
-	
+#openMenu{
+   background:whitesmoke;
+   color:blue;
+   /* position:fixed; */
+   z-index:99990;
+   padding:;
 }
 
 
 
-/* ABOUT END */
-
-/* WELCOME */
-
-.welcome{
-	margin-top:90px;
-	text-align:center;
-	
-}
-
-.welcome h1{
-	font-family: 'Satisfy', cursive;
-	font-size:3rem;
-	text-shadow:-1px 0px purple,0px 1px purple,1px 0px purple,0px -1px purple;
-	
-}
-
-
-/* WELCOME */
-
-/* SKILL START */
-
-.skill-container{
- 	margin:0 auto;
-	background:#06183D;
-	text-align:;
-	margin:10px 15px;
-	padding:10px;
-	border-radius:10px;
-	position:relative;
-	top:90px;
-	color:white;
-	border:2px solid seagreen;
-	box-shadow:2px 2px 9px black;
-}
-
-.skill-container:hover{
-	border:2px solid teal;
-	
-}
-
-.skill-container li{
-	list-style-type:none;
-	margin:40px 0;
-	position:relative;
-}
-
-.skill-container li::before{
-	position:absolute;
-	top:30px;
-	content:'';
-	background:lightgray;
-	border-radius:7px;
-	height:20px;
-	width:100%;
-	
-	/*animation-name:skill;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-timing-function:ease-in-out;*/
-	
-}
-
-.skill-container li::after{
-	position:absolute;
-	top:30px;
-	left:0;
-	right:;
-	content:'';
-	background:#31D382;
-	border-radius:7px;
-	height:20px;
-	width:0;
-}
-
-/* PROGRESS EFFECT PER CONTENT */
-
-.skill-container .h::after{
-	
-	animation-name:h;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .c::after{
-	
-	animation-name:c;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .b::after{
-	
-	animation-name:b;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .m::after{
-	
-	animation-name:m;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .p::after{
-	
-	animation-name:p;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .git::after{
-	
-	animation-name:git;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .g::after{
-	
-	animation-name:g;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .f::after{
-	
-	animation-name:f;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .n::after{
-	
-	animation-name:n;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-.skill-container .hero::after{
-	
-	animation-name:hero;
-	animation-duration:3s;
-	animation-iteration-count:1;
-	animation-fill-mode:both;
-	animation-timing-function:ease-in-out;
-}
-
-/* PROGRESS EFFECT PER CONTENT */
-
-/* ANIMATION EFFECT  START*/
-
-@keyframes h{
-	to{
-		
-		width:80%;
-		
-	}
-}
-
-@keyframes c{
-	to{
-		
-		width:70%;
-		
-	}
-}
-
-@keyframes b{
-	to{
-		
-		width:40%;
-		
-	}
-}
-
-@keyframes m{
-	to{
-		
-		width:70%;
-		
-	}
-}
-
-@keyframes p{
-	to{
-		
-		width:30%;
-		
-	}
-}
-
-@keyframes git{
-	to{
-		
-		width:60%;
-		
-	}
-}
-
-@keyframes g{
-	to{
-		
-		width:70%;
-		
-	}
-}
-
-@keyframes f{
-	to{
-		
-		width:60%;
-		
-	}
-}
-
-@keyframes n{
-	to{
-		
-		width:70%;
-		
-	}
-}
-
-@keyframes hero{
-	to{
-		
-		width:30%;
-		
-	}
-}
-
-/* ANIMATION EFFECT END*/
-
-
-
-
-/* SKILL END */
-
-
-
-/* CONTACT FORM */
-
-h1{
-		text-shadow:-1px 0px purple,0px 1px purple,1px 0px purple,0px -1px purple;
-	
-	}
-	
-	.container{
-		
-		background:#333;
-		height:540px;
-		width:;
-		
-		
-	}
-	
-	form{
-		
-		padding:10px;
-		
-		
-	}
-	
-	form label,input{
-		width:100%;
-		color:white;
-	}
-	
-	input{
-		
-		margin:10px 0;
-		font-size:1rem;
-	}
-	
-	
-	
-	.ne input{
-		height:40px;
-		background:white;
-		border:1px solid gray;
-		border-radius:3px;
-		
-	}
-	
-	::placeholder{
-		background:;
-		color:;
-		
-	}
-	
-	#msg{
-		
-		height:250px;
-		width:100%;
-		outline:0;
-		color:#111;
-		background:white;
-		border:1px solid gray;
-		border-radius:3px;
-		font-size:1rem;
-	}
-	
-	input{
-		outline:0;
-		color:#111;
-		
-		
-	}
-	
-	
-	#submit{
-		background:indianred;	
-		color:white;	
-		border:none;
-	}
-	
-	.contact-for-position{
-		position:relative;
-		top:90px;
-		margin:10px 15px;
-		padding:;
-		
-	}
-	
-	
-	/* CONTACT FORM END */
-
-
-
-/* FOOTER SECTION START */
-
-
-.footer{
-	
-	background:whitesmoke;
-	height:;
-	padding:10px;
-	
-}
-
-.footer button{
-	margin-top:10px;
-	margin:2px;
-	border:none;
-	height:40px;
-	width:40px;
-	padding:10px;
-	border-radius:5px;
-	background:#222;
-	color:lime;
-	font-size:1.3rem;
-}
-
-.watermark{
-	margin:0px auto;
-	display:block;
-}
-
-.watermark span{
-	margin:0 auto;
-	display:block;
-	color:#333;
-	text-align:center;
-	margin-top:20px;
-	
-}
-
-.watermark span a{
-	color:purple;
-	text-decoration:none;
+body{
+   background:white;
 }
 
 .links{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	overflow:auto;
-	margin-top:20px;
-	
+   background:whitesmoke;
+   display:none;
+   padding:20px;
 }
+
+.links a{
+   display:block;
+   text-align:center;
+   text-decoration:none;
+   color:white;
+   font-size:1.3rem;
+   font-family: 'Syne Mono', monospace;
+   margin-top:10px;
+   font-weight:bold;
+   
+
+}
+
+
+/* dark mode */
+.dark-mode{
+   background:#333;
+   color:white;
+   
+}
+
+.social-links{
+   text-align:center;
+   margin-top:20px;
+   display:none;
+   border-bottom:5px solid green;
+   background:green;
+   padding:10px;
+   margin-top:-10px;
+}
+
+.social-links i{
+   font-size:2rem;
+   color:white;
+   margin:10px;
+}
+
+.row{
+   padding:10px;
+   
+}
+
+.heading{
+   color:white;
+}
+
+
+.contact{
+   background:#DCDCDC;
+   padding:20px;
+   text-align:center;
+   
+}
+
+.social{
+   margin:;
+}
+
+#btn{
+   background:whitesmoke;
+   color:black;
+   border:none;
+   border-radius:10px;
+   font-size:1.3rem;
+   margin:5px;
+   width:40px;
+   padding:5px;
+}
+
+.card{
+   margin-bottom:20px;
+   /* border:2px solid whitesmoke; */
+   border:none;
+   border-top-radius:10px;
+   box-shadow:2px 2px 10px #222;
+   
+}
+
+.Row{
+   text-align:center;
+   /* justify-content:center; */
+   display:grid;
+   padding:20px;
+}
+
+.Row .card img{
+   /* width:300px; */
+   text-align:center;
+   display:block;
+   margin:auto;
+}
+
+.card-body{
+   /* background:whitesmoke; */
+   z-index:9999999;
+}
+
+
+
+
+.item1{
+   grid-column:1/12;
+   margin:5px;
+}
+
+.item2{
+   grid-column:1/12;
+   margin:5px;
+}
+
+.item3{
+   grid-column:1/13;
+   margin:5px;
+}
+
+.item4{
+   grid-column:1/12;
+   margin:5px;
+}
+
+
+
+
+
+
 
 
 
